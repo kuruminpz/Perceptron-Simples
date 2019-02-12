@@ -24,11 +24,11 @@ float x2[10]={0.23,0.07,0.17,0.46,-0.23,-0.08,0.32,0.46,-0.01,0.13};
 float y[10]={0,0,0,0,1,1,0,0,0,0};
 
 
-float wi1=1;
-float wi2=1;
+float wi1=1,wi2=1;
 
 while(wi1 != _w1 && wi2 != _w2){
 	printf("Antes: wi1 = %.2f wi2 = %.2f\n",wi1,wi2);
+	
 	for(i=0;i<=9;i++){
 		perceptron(x1[i],x2[i],y[i]);
 	}
@@ -52,7 +52,6 @@ while(wi1 != _w1 && wi2 != _w2){
 void perceptron(float a,float b, int c){
 
 float u, e,n=1;
-
 int i,y1;
 
 printf("comeca: x1 = %.2f e x2 = %.2f\n",a,b);
@@ -75,14 +74,14 @@ do{
 	if(e != 0){
 		_w1 = _w1 + n*e*a;
 		_w2 = _w2 + n*e*b;
-		break;
+			break;
 	}else{
 		_w1 = _w1 + n*e*a;
 		_w2 = _w2 + n*e*b;
 	}
 	
-
 	printf("termina: W1 = %.2f e W2 = %.2f\n",_w1,_w2);
+	
 }while(e != 0);
 
 }
