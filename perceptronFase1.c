@@ -1,12 +1,11 @@
 /*
-começarei com W sendo(0,0) e testar os valores a partir disse valor
+Programa que Simula uma rede Neural Simples;
+O PERCEPTRON;
 
-a formula do erro é e = y - y1
-y = resultado esperado
-y1 = resultado obtido
+Aluno: Ednaldo Paes C. de Oliveira;
 
-modificar o valor de W: w = w + ex
-[tem que fazer um vetor para definir o w1 e w2, assim como o x, se não dará erro com os pesos]
+IFCE Campus Maracanaú;
+Ciencia da Computação;
 
 */
 
