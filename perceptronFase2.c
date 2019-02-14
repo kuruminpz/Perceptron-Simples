@@ -20,12 +20,11 @@ float erro(float a, float b);
 //função main
 int main(){
 
-int i;
+int i, count=0;
 float x1[10]={-0.43,-0.07,0.16,-0.27,0.26,-0.45,-0.06,0.18,0.14,-0.17};
 float x2[10]={0.23,0.07,0.17,0.46,-0.23,-0.08,0.32,0.46,-0.01,0.13};
 float y[10]={1,0,0,0,1,1,0,0,0,0};
 float n=1;
-int count=0;
 
 	while(count < 10){
 			count = 0;
@@ -55,7 +54,7 @@ printf("taxa de acertos Final: %d%%\n",((count/10)*100));
 }
 
 
-//função perceptron e saída obtida
+//função perceptron 
 float perceptron(float a,float b){
 float u;
 int i,y1;
